@@ -1,0 +1,30 @@
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar>
+        <ion-item class="transparent-background"> 
+            <ion-avatar>
+            <img src="assets/avatar/marty.jpg">
+            </ion-avatar>  
+            <ion-title text-left margin-top="10px">
+                <h2 class="menuheadername">{{ userName }}</h2>
+            </ion-title>
+            <ion-title text-left class="transparent-background">
+                <h2 class="menuheadername">{{ userEmail }}</h2>
+            </ion-title>
+        </ion-item>  
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="allbackground" padding="10px">
+            <ion-list *ngFor="let p of pages">
+                  <ion-item class="transparent-background" text-left style="border-bottom: 2px solid white !important;">
+                    <ion-icon [name]="p.icon" item-right primary color="light"></ion-icon>
+                    {{ p.name }}
+                    <button menuClose ion-button color="light" full (click)="openPage(p)" style="color: #ffffff" class="transparent-background">
+                        {{p.title}}
+                    </button>
+                  </ion-item>  
+            </ion-list>
+          </ion-content>
+        </ion-menu>
+<ion-nav [root]="rootPage"></ion-nav>
