@@ -29,7 +29,7 @@ export class MyApp {
     });
 
     this.pages = [
-      { title: 'Home', component: HomePage, icon: "ios-browsers-outline" }
+      { title: 'Home', component: HomePage, icon: "ios-home-outline" }
     ];
 
   }

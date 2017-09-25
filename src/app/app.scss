@@ -21,4 +21,25 @@
 
 .transparent-background{
     background-color: transparent;
+    box-shadow: none;
+}
+
+ion-menu .header {
+    background-image: url("../assets/background/menu-image.jpg");
+    background-size: cover;
+ 
+}
+
+.toolbar-background-md{
+    background-color: transparent;
+}
+
+.item-md.item-block .item-inner{
+    border-bottom: none;
+}
+
+.menu-header-name{
+    color: white;
+    text-shadow: 2px 2px #000000;
+    //-webkit-text-stroke: 1px darkslategray;
 }
