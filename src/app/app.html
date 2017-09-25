@@ -1,19 +1,25 @@
 <ion-menu [content]="content">
-    <ion-header class="teste">
+    <ion-header color="red">
         <ion-toolbar>
-            <ion-item class="transparent-background"> 
-                <ion-avatar>
-                <img src="assets/background/menu-image.jpg">    
-                </ion-avatar>  
-                <ion-title text-left margin-top="10px">
-                    <h3 class="menu-header-name">Lucas Daniel Pedroso</h3>
-                    <h3 class="menu-header-name">Grupo 10</h3>
-                    <h3 class="menu-header-name">lukasdpdeveloper@hotmail.com</h3>
-                </ion-title>
-                <ion-title text-left>
-                    <!--<h2 class="menuheadername">{{ userEmail }}</h2>-->
-                </ion-title>
-            </ion-item>  
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-item class="transparent-background"> 
+                            <ion-avatar>
+                                <img src="assets/background/menu-image.jpg">    
+                            </ion-avatar>  
+                            <ion-title text-left margin-top="10px">
+                                <h3 class="menu-header-name">Lucas Daniel Pedroso</h3>
+                                <h3 class="menu-header-name">Grupo 10</h3>
+                                <h3 class="menu-header-name">lukasdpdeveloper@hotmail.com</h3>
+                            </ion-title>
+                            <ion-title text-left>
+                                <!--<h2 class="menuheadername">{{ userEmail }}</h2>-->
+                            </ion-title>
+                        </ion-item>
+                    </ion-col>    
+                </ion-row>    
+            </ion-grid>   
         </ion-toolbar>
     </ion-header>
 

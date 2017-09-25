@@ -25,9 +25,20 @@
 }
 
 ion-menu .header {
-    background-image: url("../assets/background/menu-image.jpg");
+    background-image: url("../assets/images/menu-header.jpg");
+    //background-image: url("assets/images/menu-header.jpg");
     background-size: cover;
- 
+}
+
+.ion-header-img{
+    background-image: url("../assets/images/menu-header.jpg");
+    //background-image: url("assets/images/menu-header.jpg");
+    background-size: cover;
+}    
+
+header header-ios{
+    background-image: url("../assets/images/menu-header.jpg");
+    background-size: cover;
 }
 
 .toolbar-background-md{

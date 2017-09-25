@@ -4,11 +4,7 @@ page-home {
         background-color: #3F3F57;
     }
 
-    .temp-logo-container{
-        margin-top: 50px;
-    }
-
-    .temp-logo{
+    .logo{
        color : white;
        left: 0;
        right: 0;
@@ -18,6 +14,57 @@ page-home {
        margin-top: 20px;
        text-align: center;
        font-size: 50px;
+    }
+
+    .div-logo{
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .div-grid{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+
+    ion-grid {
+        height: 100%;
+        border: 2px solid black;
+    }
+
+    ion-row {
+        height: 100%;
+        text-align: center;
+    }
+
+    ion-col {
+        text-align: center;
+    }
+
+    .ion-icon-home {
+        font-size: 100px; //Preferred size here
+        color: "white";
+    }
+
+    .transparent-background-home{
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    ion-label{
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .toolbar-background {
+        background-color: transparent;
+    }
+
+    .icon-header-home{
+        color: white;
+        float: right;
+        right: 0;
     }
 
 
