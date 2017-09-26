@@ -22,23 +22,31 @@
 .transparent-background{
     background-color: transparent;
     box-shadow: none;
+    
+}
+
+.menu-background-image {
+    background-image: url("../assets/images/menu-header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 200px;
+}
+
+.menu-header-name{
+    color: white;
+    //text-shadow: 2px 2px #000000;
+    
 }
 
 ion-menu .header {
     background-image: url("../assets/images/menu-header.jpg");
-    //background-image: url("assets/images/menu-header.jpg");
     background-size: cover;
+    height: 28%;
 }
 
-.ion-header-img{
-    background-image: url("../assets/images/menu-header.jpg");
-    //background-image: url("assets/images/menu-header.jpg");
-    background-size: cover;
-}    
-
-header header-ios{
-    background-image: url("../assets/images/menu-header.jpg");
-    background-size: cover;
+.pane, .menu, .view, .list, .item       {
+    background: transparent;
 }
 
 .toolbar-background-md{
@@ -49,8 +57,24 @@ header header-ios{
     border-bottom: none;
 }
 
-.menu-header-name{
+.menuheadername{
     color: white;
-    text-shadow: 2px 2px #000000;
-    //-webkit-text-stroke: 1px darkslategray;
+    margin-top: 100px;
+    font-weight: bold;
+    
+}
+
+ion-menu .header ion-avatar img{ 
+    width: 75px;
+    height: 75px;
+    margin-top: 20px;
+}
+
+ion-menu div ion-header ion-item div.item-inner div{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.list-ios {
+    margin: -1px 0 0px;
 }

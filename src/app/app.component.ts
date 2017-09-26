@@ -29,7 +29,8 @@ export class MyApp {
     });
 
     this.pages = [
-      { title: 'Home', component: HomePage, icon: "ios-home-outline" }
+      { title: 'Home', component: HomePage, icon: "ios-home" },
+      { title: 'Sair', component: LoginPage, icon: "ios-log-out" }
     ];
 
   }
