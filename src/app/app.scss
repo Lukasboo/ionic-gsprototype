@@ -42,7 +42,7 @@
 ion-menu .header {
     background-image: url("../assets/images/menu-header.jpg");
     background-size: cover;
-    height: 28%;
+    height: 33%;
 }
 
 .pane, .menu, .view, .list, .item       {
@@ -75,6 +75,7 @@ ion-menu div ion-header ion-item div.item-inner div{
     box-shadow: none;
 }
 
-.list-ios {
-    margin: -1px 0 0px;
+.list-md {
+    margin: -28px 0 16px;
+    
 }

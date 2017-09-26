@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Calendar } from '@ionic-native/calendar';
 
 /**
  * Generated class for the AssembliesPage page.
@@ -12,14 +13,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-assemblies',
   templateUrl: 'assemblies.html',
+  providers: [
+    Calendar
+  ]
 })
 export class AssembliesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    private calendar: Calendar
+    ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AssembliesPage');
   }
+
 
 }

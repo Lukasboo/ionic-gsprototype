@@ -1,7 +1,7 @@
 page-home {
 
     .fixed-content{
-        background-color: #3F3F57;
+        background-color: #253237;
     }
 
     .logo{
@@ -11,9 +11,10 @@ page-home {
        position: absolute;
        margin-left: auto;
        margin-right: auto;
-       margin-top: 20px;
+       margin-top: 10px;
        text-align: center;
-       font-size: 50px;
+       width: 55%;
+       height: 10px;
     }
 
     .div-logo{
@@ -32,7 +33,7 @@ page-home {
     }
 
     ion-row {
-        height: 20%;
+        height: 22%;
         text-align: center;
     }
 
@@ -41,7 +42,7 @@ page-home {
     }
 
     .ion-icon-home {
-        font-size: 100px; //Preferred size here
+        font-size: 80px; //Preferred size here
         color: "white";
     }
 
@@ -64,6 +65,7 @@ page-home {
         color: white;
         float: right;
         right: 0;
+        font-size: 30px;
     }
 
     .logo{

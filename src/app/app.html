@@ -20,14 +20,16 @@
         </ion-item>    
     </ion-header>
 
-    <ion-content padding="10px">
+    <ion-content padding="10px" style="margin-top: 20px">
         <ion-list *ngFor="let p of pages" no-lines>
-            <ion-item class="transparent-background" text-left>
+            <ion-item class="transparent-background" style="margin-top: 5px" text-left>
                 <ion-icon [name]="p.icon" item-left primary></ion-icon>
                 {{ p.name }}
-                <button menuClose ion-button outline full clear (click)="openPage(p)" color="dark" class="transparent-background">
+                <ion-buttons start>
+                <button menuClose ion-button outline full clear item-left text-left (click)="openPage(p)" color="dark" class="transparent-background" style="left: -72px;">
                     {{p.title}}
                 </button>
+            </ion-buttons>
             </ion-item>  
         </ion-list>
     </ion-content>
