@@ -1,13 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NotificationPage } from '../notification/notification';
-
-/**
- * Generated class for the BoletoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { AlertController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -16,7 +10,11 @@ import { NotificationPage } from '../notification/notification';
 })
 export class BoletoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    private alertCtrl: AlertController  
+  ) {
   }
 
   ionViewDidLoad() {
@@ -25,6 +23,35 @@ export class BoletoPage {
 
   goToNotificationPage(){
     this.navCtrl.setRoot(NotificationPage);
+  }
+
+  presentConfirm() {
+    let alert = this.alertCtrl.create({
+      title: 'Boleto',
+      inputs: [
+        {
+          name: 'mes',
+          placeholder: 'Mês'
+        }
+      ],
+      message: 'Emissão 2 via de Boleto',
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          handler: () => {
+            
+          }
+        },
+        {
+          text: 'Confirmar',
+          handler: () => {
+            
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 
 }

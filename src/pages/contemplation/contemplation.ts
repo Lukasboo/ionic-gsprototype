@@ -2,13 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NotificationPage } from '../notification/notification';
 
-/**
- * Generated class for the ContemplationPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-contemplation',
@@ -26,14 +19,14 @@ export class ContemplationPage {
 
   ionViewDidLoad() {
     this.contemplations = [ 
-      {"title": "Cadastro recebido", "icon": "md-done-all"},
-      {"title": "Análise do cadastro", "icon": "md-done-all"},
-      {"title": "Vistoria", "icon": "md-done-all"},
-      {"title": "Recebimento NF ou recibo de venda", "icon": "md-done-all"},
-      {"title": "Dut em nome do consorciado c/ alien", "icon": "md-done-all"},
-      {"title": "Taxas pagas", "icon": "ios-alert-outline"},
-      {"title": "Liberação de crédito", "icon": "ios-close-circle-outline"},
-      {"title": "Contemplação", "icon": "ios-close-circle-outline"}
+      {"title": "Cadastro recebido", "icon": "md-done-all", "iconcolor": "secondary"},
+      {"title": "Análise do cadastro", "icon": "md-done-all", "iconcolor": "secondary"},
+      {"title": "Vistoria", "icon": "md-done-all", "iconcolor": "secondary"},
+      {"title": "Recebimento NF ou recibo de venda", "icon": "md-done-all", "iconcolor": "secondary"},
+      {"title": "Dut em nome do consorciado c/ alien", "icon": "md-done-all", "iconcolor": "secondary"},
+      {"title": "Taxas pagas", "icon": "ios-alert-outline", "iconcolor": "warning"},
+      {"title": "Liberação de crédito", "icon": "ios-close-circle-outline", "iconcolor": "danger"},
+      {"title": "Contemplação", "icon": "ios-close-circle-outline", "iconcolor": "danger"}
     ]
     console.log(this.contemplations);
   }
@@ -41,5 +34,7 @@ export class ContemplationPage {
   goToNotificationPage(){
     this.navCtrl.setRoot(NotificationPage);
   }
+
+  
 
 }

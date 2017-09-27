@@ -14,7 +14,7 @@
     <ion-card *ngFor="let cont of contemplations">
       <ion-item>
           <p item-left>{{ cont.title }}</p>
-          <ion-icon class="ion-col-cont" color="secondary" name="{{ cont.icon }}" item-right primary></ion-icon>
+          <ion-icon class="ion-col-cont" color="{{ cont.iconcolor }}" name="{{ cont.icon }}" item-right primary></ion-icon>
           <ion-icon class="ion-col-cont" name="ios-add-circle-outline" item-right primary></ion-icon>
       </ion-item>
     </ion-card>
