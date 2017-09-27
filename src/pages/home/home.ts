@@ -4,6 +4,7 @@ import { AssembliesPage } from '../assemblies/assemblies';
 import { BidsPage } from '../bids/bids';
 import { NotificationPage } from '../notification/notification';
 import { ContemplationPage } from "../contemplation/contemplation";
+import { BoletoPage } from '../boleto/boleto';
 
 @Component({
   selector: 'page-home',
@@ -29,6 +30,10 @@ export class HomePage {
 
   goToContemplationPage(){
     this.navCtrl.setRoot(ContemplationPage);
+  }
+
+  goToBoletoPage(){
+    this.navCtrl.setRoot(BoletoPage);
   }
 
 }

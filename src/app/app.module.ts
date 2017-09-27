@@ -12,6 +12,7 @@ import { AssembliesPage } from '../pages/assemblies/assemblies';
 import { BidsPage } from '../pages/bids/bids';
 import { NotificationPage } from '../pages/notification/notification';
 import { ContemplationPage } from '../pages/contemplation/contemplation';
+import { BoletoPage } from '../pages/boleto/boleto';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ContemplationPage } from '../pages/contemplation/contemplation';
     AssembliesPage,
     BidsPage,
     NotificationPage,
-    ContemplationPage
+    ContemplationPage,
+    BoletoPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { ContemplationPage } from '../pages/contemplation/contemplation';
     AssembliesPage,
     BidsPage,
     NotificationPage,
-    ContemplationPage
+    ContemplationPage,
+    BoletoPage
   ],
   providers: [
     StatusBar,
