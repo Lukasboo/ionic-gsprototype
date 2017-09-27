@@ -1,7 +1,7 @@
 page-assemblies {
 
     .fixed-content{
-        background-color: #3F3F57;
+        background-color: white;
     }
 
     .transparent-background-assemblies{
@@ -93,17 +93,29 @@ page-assemblies {
         color: white !important
     }
 
-    ion-grid {
-        height: 45%;
+    .ion-grid-assemblie {
+        height: 35%;
         width: 100%;
+        background-color: grey;
+        box-shadow: none;
     }
 
-    ion-row {
-        height: 45%;
+    .ion-row-assemblie {
+        height: 35%;
         text-align: center;
     }
 
-    ion-col {
+    .ion-col-assemblie {
+        text-align: center;
+    }
+
+    .ion-grid-assemblies {
+        height: 58%;
+        width: 100%;
+    }
+
+    .ion-row-assemblies {
+        height: 16%;
         text-align: center;
     }
 
@@ -132,6 +144,13 @@ page-assemblies {
         float: right;
         right: 0;
         font-size: 30px;
+    }
+
+    .focus-month {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
     }
 
 }

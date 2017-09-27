@@ -9,13 +9,19 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { AssembliesPage } from '../pages/assemblies/assemblies';
+import { BidsPage } from '../pages/bids/bids';
+import { NotificationPage } from '../pages/notification/notification';
+import { ContemplationPage } from '../pages/contemplation/contemplation';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     LoginPage,
-    AssembliesPage
+    AssembliesPage,
+    BidsPage,
+    NotificationPage,
+    ContemplationPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +32,10 @@ import { AssembliesPage } from '../pages/assemblies/assemblies';
     MyApp,
     HomePage,
     LoginPage,
-    AssembliesPage
+    AssembliesPage,
+    BidsPage,
+    NotificationPage,
+    ContemplationPage
   ],
   providers: [
     StatusBar,

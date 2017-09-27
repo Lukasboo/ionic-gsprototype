@@ -1,0 +1,66 @@
+<ion-content>
+    <ion-navbar color="def">
+        <button ion-button menuToggle>
+          <ion-icon name="ios-menu" class="icon-header-bids"></ion-icon>
+        </button>
+        <ion-label class="listTitle">Oferta de lances</ion-label>
+        <ion-buttons end>
+          <button ion-button right class="transparent-background-bids">
+            <ion-icon name="ios-notifications" class="icon-header-bids" color="light" primary></ion-icon>
+          </button>
+        </ion-buttons>
+      </ion-navbar>
+      <img src="assets/images/bid-house.jpg" class="house">
+      <ion-label text-center color="dark" style="font-size: 20px">$ 600.000,00</ion-label>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-label text-center color="dark" style="font-size: 17px">Lance Mínimo</ion-label>
+            <ion-label text-center color="dark" style="font-size: 17px">6</ion-label>
+          </ion-col>  
+          <ion-col>
+            <ion-label text-center color="dark" style="font-size: 17px">Lance Máximo</ion-label>
+            <ion-label text-center color="dark" style="font-size: 17px">30</ion-label>
+          </ion-col>  
+        </ion-row>
+        <ion-row>
+          <ion-col>
+              <ion-label text-center color="dark" style="font-size: 17px">Valor do Lance</ion-label>
+          </ion-col>
+          <ion-col>
+              <ion-input class="input-bids"></ion-input>  
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <div>
+            <div class="div-bid-button">
+              <ion-row>
+                <ion-col col-12 class="bid-col">
+                  <button ion-button class="bid-button" (click)="show = true;">Dar Lance</button>
+                </ion-col>  
+              </ion-row>
+            </div>
+            <div class="div-bid-buttons" [hidden]="!show">
+              <ion-row>
+                <ion-col col-6 class="bid-col">
+                    <button ion-button class="bid-buttons" ion-button>Cancelar</button>
+                </ion-col>    
+                <ion-col col-6 class="bid-col">
+                    <button ion-button class="bid-buttons" (click)="show2 = true;">Confirmar</button>
+                </ion-col>    
+              </ion-row>  
+            </div>  
+            <div class="div-bid-buttons" [hidden]="!show2">
+              <ion-row>
+                <ion-col col-6 class="bid-col">
+                    
+                </ion-col>    
+                <ion-col col-6 class="bid-col">
+                    <button ion-button class="bid-buttons" (click)="goToHomePage()">Ok, Entendi</button>
+                </ion-col>    
+              </ion-row>  
+            </div>  
+          </div>  
+        </ion-row>  
+      </ion-grid>
+</ion-content>

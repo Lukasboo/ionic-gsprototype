@@ -1,0 +1,68 @@
+page-bids {
+
+    .icon-header-bids{
+        color: white;
+        float: right;
+        right: 0;
+    }
+
+    .listTitle
+    {
+        color : white !important;
+    }
+
+    .transparent-background-bids{
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .house{
+        height: 50%;
+        width: 100%;
+    }
+
+    .input-bids{
+        border: 1px solid black;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .div-bid-button{
+        z-index: 1;
+        position: absolute;
+        height: 50px;
+        width: 100%;
+        z-index:1;
+        position: absolute;
+        background-color: white;
+    }
+
+    .div-bid-buttons{
+        z-index: 2;
+        position: absolute;
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        width: 360px;
+        background-color: white;
+    }
+
+    .bid-button{
+        margin: 0 auto;
+        height: 40px;
+        width: 80%;
+        background-color: #6e767a;
+    }
+
+    .bid-buttons{
+        margin: 0 auto;
+        height: 40px;
+        width: 75%;
+        background-color: #6e767a;
+    }
+
+    .bid-col{
+        text-align: center;
+    }
+
+}

@@ -1,12 +1,12 @@
 <ion-content padding>
     <ion-navbar>
-        <button ion-button menuToggle>
-          <ion-icon name="ios-menu" class="icon-header-home"></ion-icon>
+      <button ion-button menuToggle>
+        <ion-icon name="ios-menu" class="icon-header-home"></ion-icon>
+      </button>
+      <ion-buttons end>
+        <button ion-button right class="transparent-background-home">
+          <ion-icon name="ios-notifications" class="icon-header-home" primary></ion-icon>
         </button>
-        <ion-buttons end>
-          <button ion-button right class="transparent-background-home">
-            <ion-icon name="ios-notifications" class="icon-header-home" primary></ion-icon>
-          </button>
       </ion-buttons>
 
     </ion-navbar>
@@ -22,7 +22,7 @@
           <ion-label>ASSEMBLEIAS</ion-label>
         </ion-col>
         <ion-col col-6>
-            <button class="transparent-background-home">
+            <button class="transparent-background-home" (click)="goToBidsPage()">
               <ion-icon name="ios-flag" class="ion-icon-home" item-center primary color="light"></ion-icon>
             </button>
             <ion-label>LANCES</ion-label>
@@ -30,13 +30,13 @@
       </ion-row>  
       <ion-row>
           <ion-col col-6>
-              <button class="transparent-background-home">
+              <button class="transparent-background-home" (click)="goToNotificationPage()">
               <ion-icon name="ios-notifications-outline" class="ion-icon-home" item-center primary color="light"></ion-icon>
             </button>
             <ion-label>AVISOS</ion-label>
           </ion-col>
           <ion-col col-6>
-              <button class="transparent-background-home">
+              <button class="transparent-background-home" (click)="goToContemplationPage()">
                 <ion-icon name="ios-pie-outline" class="ion-icon-home" item-center primary color="light"></ion-icon>
               </button>
               <ion-label>FASES DE CONTEMPLAÇÃO</ion-label>
