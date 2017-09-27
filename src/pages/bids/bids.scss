@@ -16,11 +16,6 @@ page-bids {
         box-shadow: none;
     }
 
-    .house{
-        height: 50%;
-        width: 100%;
-    }
-
     .input-bids{
         border: 1px solid black;
         width: 70%;
@@ -63,6 +58,19 @@ page-bids {
 
     .bid-col{
         text-align: center;
+    }
+
+    .bid-imovel{
+        margin: auto 0;
+    }
+
+    .bid-imovel{
+        background-color: #6e767a;
+    }
+
+    .house{
+        padding: 0px;
+        margin: 0px;
     }
 
 }

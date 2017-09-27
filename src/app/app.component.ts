@@ -5,6 +5,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+import { BoletoPage } from '../pages/boleto/boleto';
+import { AssembliesPage } from '../pages/assemblies/assemblies';
+import { BidsPage } from '../pages/bids/bids';
+import { NotificationPage } from '../pages/notification/notification';
+import { ContemplationPage } from '../pages/contemplation/contemplation';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -30,6 +36,11 @@ export class MyApp {
 
     this.pages = [
       { title: 'Home', component: HomePage, icon: "ios-home" },
+      { title: 'Emissão de boleto', component: BoletoPage, icon: "logo-usd" },
+      { title: 'Calendário de Assembleias', component: AssembliesPage, icon: "md-calendar" },
+      { title: 'Oferta de lance', component: BidsPage, icon: "ios-flag" },
+      { title: 'Avisos', component: NotificationPage, icon: "ios-notifications" },
+      { title: 'Fases de contemplação', component: ContemplationPage, icon: "ios-pie" },
       { title: 'Sair', component: LoginPage, icon: "ios-log-out" }
     ];
 

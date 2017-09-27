@@ -6,29 +6,33 @@
 -->
 
 <ion-content class="login-background" padding>
-  <div class="temp-logo-container">
-      <img src="assets/images/logo.png" class="temp-logo">
-  </div>
   <!--<div class="temp-logo-container">
-    <h1 class="temp-logo">GSCON</h1>
-    <h3 class="temp-logo">Sistemas Integrados</h3>
+      <img src="assets/images/logo.png" class="temp-logo">
   </div>-->
+  <div class="temp-logo-container">
+    <h1 class="logo1">GSCON</h1>
+    <h3 class="logo2">Sistemas Integrados</h3>
+  </div>
+  
+    <!--<ion-title text-center class="logo1">GSCON</ion-title>-->
+  
+    
   <div class="div-login">
-    <ion-grid class="transparent-background" padding>
+    <ion-grid class="grid-login" padding>
       <ion-item class="transparent-background">
-        <ion-label>Grupo*</ion-label>
+        <ion-label color="light" class="login-text"><strong>Grupo*</strong></ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
       <ion-item class="transparent-background">
-        <ion-label>Cota*</ion-label>
+        <ion-label color="light" class="login-text"><strong>Cota*</strong></ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
       <ion-item class="transparent-background">
-        <ion-label>Versão*</ion-label>
+        <ion-label color="light" class="login-text"><strong>Versão*</strong></ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
       <ion-item class="transparent-background">
-        <ion-label>Password*</ion-label>
+        <ion-label color="light" class="login-text"><strong>Password*</strong></ion-label>
         <ion-input type="password"></ion-input>
       </ion-item>
       <button ion-button class="button-enter" (click)="login()">Entrar</button>

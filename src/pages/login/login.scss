@@ -8,7 +8,7 @@ page-login {
     }
 
     .div-login{
-        background-color: #ffffff;
+        //background-color: #ffffff;
         bottom: 0;
         left: 30px;
         right: 20px;
@@ -23,6 +23,8 @@ page-login {
     .button-enter{
         margin-top: 20px;
         height: 50px;
+        border: 2px solid #263238;
+        border-radius: 30px;
         background-color: #263238;
     }
 
@@ -30,7 +32,7 @@ page-login {
         margin-top: 50px;
     }
 
-    .temp-logo{
+    .logo1{
        color : white;
        left: 0;
        right: 0;
@@ -38,7 +40,33 @@ page-login {
        margin-left: auto;
        margin-right: auto;
        margin-top: 20px;
-       height: 120px;
+       font-size: 70px;
+       text-align: center;
+       text-shadow: 4px 3px #263238;
     }
+
+    .logo2{
+        color : white;
+        left: 0;
+        right: 0;
+        position: absolute;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        margin-top: 60px;
+        font-size: 30px;
+        text-align: center;
+        text-shadow: 2px 2px #263238;
+     }
+
+     .login-text{
+        text-shadow: 2px 2px #263238;
+     }
+
+     .grid-login{
+        background-color: transparent;
+        box-shadow: none;
+        border: 2px solid #263238;
+        border-radius: 30px;
+     }
 
 }    
