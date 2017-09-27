@@ -4,7 +4,7 @@
         <ion-icon name="ios-menu" class="icon-header-home"></ion-icon>
       </button>
       <ion-buttons end>
-        <button ion-button right class="transparent-background-home">
+        <button ion-button right class="transparent-background-home" (click)="goToNotificationPage()">
           <ion-icon name="ios-notifications" class="icon-header-home" primary></ion-icon>
         </button>
       </ion-buttons>
@@ -12,7 +12,10 @@
     </ion-navbar>
     <ion-grid class="div-grid">
       <ion-row>
-          <img src="assets/images/logo2.png" class="logo">
+          <!--<img src="assets/images/logo2.png" class="logo">-->
+          <div class="temp-logo-container">
+            <h1 class="logo1">GSCON</h1>
+          </div>
       </ion-row>
       <ion-row>
         <ion-col col-6>
@@ -51,7 +54,7 @@
             </ion-col>
             <ion-col col-6>
                 <button class="transparent-background-home">
-                  <ion-icon name="ios-log-out" class="ion-icon-home" item-center primary color="light"></ion-icon>
+                  <ion-icon name="ios-log-out" class="ion-icon-home" item-center primary color="light" (click)="goToLoginPage()"></ion-icon>
                 </button>
                 <ion-label>SAIR</ion-label>
               </ion-col>

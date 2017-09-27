@@ -5,8 +5,8 @@
       </button>
       <ion-label color="light">Oferta de lances</ion-label>
       <ion-buttons end>
-        <button ion-button right class="transparent-background-bids">
-          <ion-icon name="ios-notifications" class="icon-header-bids" color="light" primary></ion-icon>
+        <button ion-button right class="icon-header-boleto" (click)="goToNotificationPage()">
+          <ion-icon name="ios-notifications" class="icon-header-boleto" color="light" primary></ion-icon>
         </button>
       </ion-buttons>
     </ion-navbar>
@@ -63,7 +63,7 @@
           <ion-col col-9></ion-col>
           <ion-col col-3>
             <ion-fab item-right>
-              <button ion-fab item-right color="defblue">+</button>
+              <button ion-fab item-right color="defblue" strong large>+</button>
             </ion-fab>
           </ion-col>
         </ion-row>

@@ -6,18 +6,18 @@
     <ion-label color="light">Mensagens GROSCON</ion-label>
   </ion-navbar>  
 
-  <ion-card class="card-not" style="width: 100%;" padding>
-    <ion-label><strong>O que é Fundo Comum?</strong></ion-label>
+  <ion-card *ngFor="let notification of notifications" class="card-not" style="width: 100%;" padding>
+    <ion-label><strong>{{ notification.title }}</strong></ion-label>
     <ion-label color="soft"> 
       <ion-icon name="ios-calendar-outline" item-left></ion-icon>
-      03/06/2017
+      {{ notification.date }}
     </ion-label>
     <ion-note color="dark">
-      Fundo Comum é o valor que todo consorciado paga para formar a poupança que será destinada à aquisição do bem ou serviço.
+        {{  notification.note }}
     </ion-note>
   </ion-card>
 
-  <ion-card class="card-not" style="width: 100%;" padding>
+  <!--<ion-card class="card-not" style="width: 100%;" padding>
     <ion-label><strong>GROSCON e Pacto Global</strong></ion-label>
     <ion-label color="soft"> 
       <ion-icon name="ios-calendar-outline" item-left></ion-icon>
@@ -48,6 +48,6 @@
     <ion-note color="dark">
       Fundo Comum é o valor que todo consorciado paga para formar a poupança que será destinada à aquisição do bem ou serviço.
     </ion-note>
-  </ion-card>
+  </ion-card>-->
 
 </ion-content>

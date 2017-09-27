@@ -4,6 +4,11 @@
         <ion-icon name="ios-menu" class="icon-header-home"></ion-icon>
       </button>
       <ion-label color="light">Mensagens GROSCON</ion-label>
+      <ion-buttons end>
+        <button ion-button right class="icon-header-contemp" (click)="goToNotificationPage()">
+          <ion-icon name="ios-notifications" class="icon-header-contemp" color="light" primary></ion-icon>
+        </button>
+      </ion-buttons>
     </ion-navbar>  
   
     <ion-card *ngFor="let cont of contemplations">

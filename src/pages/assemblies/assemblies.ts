@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Calendar } from '@ionic-native/calendar';
+import { NotificationPage } from '../notification/notification';
 
 /**
  * Generated class for the AssembliesPage page.
@@ -30,5 +31,8 @@ export class AssembliesPage {
     console.log('ionViewDidLoad AssembliesPage');
   }
 
+  goToNotificationPage(){
+    this.navCtrl.setRoot(NotificationPage);
+  }
 
 }

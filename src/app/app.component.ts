@@ -35,12 +35,12 @@ export class MyApp {
     });
 
     this.pages = [
-      { title: 'Home', component: HomePage, icon: "ios-home" },
+      { title: 'Home', component: HomePage, icon: "ios-home-outline" },
       { title: 'Emissão de boleto', component: BoletoPage, icon: "logo-usd" },
-      { title: 'Calendário de Assembleias', component: AssembliesPage, icon: "md-calendar" },
-      { title: 'Oferta de lance', component: BidsPage, icon: "ios-flag" },
-      { title: 'Avisos', component: NotificationPage, icon: "ios-notifications" },
-      { title: 'Fases de contemplação', component: ContemplationPage, icon: "ios-pie" },
+      { title: 'Calendário de Assembleias', component: AssembliesPage, icon: "ios-calendar-outline" },
+      { title: 'Oferta de lance', component: BidsPage, icon: "ios-flag-outline" },
+      { title: 'Avisos', component: NotificationPage, icon: "ios-notifications-outline" },
+      { title: 'Fases de contemplação', component: ContemplationPage, icon: "ios-pie-outline" },
       { title: 'Sair', component: LoginPage, icon: "ios-log-out" }
     ];
 

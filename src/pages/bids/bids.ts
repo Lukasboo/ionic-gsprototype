@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { NotificationPage } from '../notification/notification';
 
 /**
  * Generated class for the BidsPage page.
@@ -28,6 +29,10 @@ export class BidsPage {
 
   goToHomePage(){
     this.navCtrl.setRoot(HomePage);
+  }
+
+  goToNotificationPage(){
+    this.navCtrl.setRoot(NotificationPage);
   }
 
 }

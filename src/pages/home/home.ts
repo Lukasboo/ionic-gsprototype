@@ -5,6 +5,7 @@ import { BidsPage } from '../bids/bids';
 import { NotificationPage } from '../notification/notification';
 import { ContemplationPage } from "../contemplation/contemplation";
 import { BoletoPage } from '../boleto/boleto';
+import { LoginPage } from '../login/login';
 
 @Component({
   selector: 'page-home',
@@ -36,4 +37,10 @@ export class HomePage {
     this.navCtrl.setRoot(BoletoPage);
   }
 
+  goToLoginPage(){
+    this.navCtrl.setRoot(LoginPage);
+  }
+
+
+  
 }

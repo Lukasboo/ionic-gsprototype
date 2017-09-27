@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NotificationPage } from '../notification/notification';
 
 /**
  * Generated class for the ContemplationPage page.
@@ -35,6 +36,10 @@ export class ContemplationPage {
       {"title": "Contemplação", "icon": "ios-close-circle-outline"}
     ]
     console.log(this.contemplations);
+  }
+
+  goToNotificationPage(){
+    this.navCtrl.setRoot(NotificationPage);
   }
 
 }

@@ -5,63 +5,84 @@
         </button>
         <ion-label class="listTitle">Oferta de lances</ion-label>
         <ion-buttons end>
-          <button ion-button right class="transparent-background-bids">
+          <button ion-button right class="transparent-background-bids" (click)="goToNotificationPage()">
             <ion-icon name="ios-notifications" class="icon-header-bids" color="light" primary></ion-icon>
           </button>
         </ion-buttons>
       </ion-navbar>
       <img src="assets/images/bid-house.jpg" class="house">
       <ion-title text-center color="light" class="bid-imovel" padding>IMÓVEL</ion-title>
-      <ion-label text-center color="dark" style="font-size: 20px">$ 600.000,00</ion-label>
-      <ion-grid>
+      <div [hidden]="!show2">
+        <ion-title text-center style="margin-top: 75px;">Lance no valor de R$ 42.000,00</ion-title>
+        <ion-title text-center>enviado com sucesso!</ion-title>
+        
         <ion-row>
-          <ion-col>
-            <ion-label text-center color="dark" style="font-size: 17px">Lance Mínimo %</ion-label>
-            <ion-label text-center color="dark" style="font-size: 17px">6</ion-label>
-          </ion-col>  
-          <ion-col>
-            <ion-label text-center color="dark" style="font-size: 17px">Lance Máximo %</ion-label>
-            <ion-label text-center color="dark" style="font-size: 17px">30</ion-label>
-          </ion-col>  
-        </ion-row>
-        <ion-row>
-          <ion-col>
-              <ion-label text-center color="dark" style="font-size: 17px">Valor do Lance</ion-label>
-          </ion-col>
-          <ion-col>
-              <ion-input class="input-bids"></ion-input>  
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <div>
-            <div class="div-bid-button">
-              <ion-row>
-                <ion-col col-12 class="bid-col">
-                  <button ion-button class="bid-button" (click)="show = true;">Dar Lance</button>
-                </ion-col>  
-              </ion-row>
-            </div>
-            <div class="div-bid-buttons" [hidden]="!show">
-              <ion-row>
-                <ion-col col-6 class="bid-col">
-                    <button ion-button class="bid-buttons" ion-button>Cancelar</button>
-                </ion-col>    
-                <ion-col col-6 class="bid-col">
-                    <button ion-button class="bid-buttons" (click)="show2 = true;">Confirmar</button>
-                </ion-col>    
-              </ion-row>  
-            </div>  
-            <div class="div-bid-buttons" [hidden]="!show2">
-              <ion-row>
-                <ion-col col-6 class="bid-col">
-                    
-                </ion-col>    
-                <ion-col col-6 class="bid-col">
-                    <button ion-button class="bid-buttons" (click)="goToHomePage()">Ok, Entendi</button>
-                </ion-col>    
-              </ion-row>  
-            </div>  
-          </div>  
+          
+          <ion-col col-6 class="bid-col">
+              
+          </ion-col>    
+          <ion-col col-6 class="bid-col">
+              <button ion-button class="bid-buttons" (click)="goToHomePage()" style="margin-top: 60px">Ok, Entendi</button>
+          </ion-col>    
         </ion-row>  
-      </ion-grid>
+
+
+      </div>
+      <div [hidden]="show2">
+
+        <ion-label text-center color="dark" style="font-size: 20px">$ 600.000,00</ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-label text-center color="dark" style="font-size: 17px">Lance Mínimo %</ion-label>
+              <ion-label text-center color="dark" style="font-size: 17px">6</ion-label>
+            </ion-col>  
+            <ion-col>
+              <ion-label text-center color="dark" style="font-size: 17px">Lance Máximo %</ion-label>
+              <ion-label text-center color="dark" style="font-size: 17px">30</ion-label>
+            </ion-col>  
+          </ion-row>
+          <ion-row>
+            <ion-col>
+                <ion-label text-center color="dark" style="font-size: 17px">Valor do Lance</ion-label>
+            </ion-col>
+            <ion-col>
+                <ion-input class="input-bids"></ion-input>  
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <div>
+              <div class="div-bid-button">
+                <ion-row>
+                  <ion-col col-12 class="bid-col">
+                    <button ion-button class="bid-button" (click)="show = true;">Dar Lance</button>
+                  </ion-col>  
+                </ion-row>
+              </div>
+              <div class="div-bid-buttons" [hidden]="!show">
+                <ion-row>
+                  <ion-col col-6 class="bid-col">
+                      <button ion-button class="bid-buttons" ion-button>Cancelar</button>
+                  </ion-col>    
+                  <ion-col col-6 class="bid-col">
+                      <button ion-button class="bid-buttons" (click)="show2 = true;">Confirmar</button>
+                  </ion-col>    
+                </ion-row>  
+              </div>  
+              <!--<div class="div-bid-buttons" [hidden]="!show2">
+                <ion-row>
+                  <ion-col col-6 class="bid-col">
+                      
+                  </ion-col>    
+                  <ion-col col-6 class="bid-col">
+                      <button ion-button class="bid-buttons" (click)="goToHomePage()">Ok, Entendi</button>
+                  </ion-col>    
+                </ion-row>  
+              </div>-->  
+            </div>  
+          </ion-row>  
+        </ion-grid>
+
+    </div>
+
 </ion-content>

@@ -4,7 +4,7 @@ page-home {
         background-color: #253237;
     }
 
-    .logo{
+    /*.logo{
        color : white;
        left: 0;
        right: 0;
@@ -20,7 +20,7 @@ page-home {
     .div-logo{
         position: relative;
         margin-top: 20px;
-    }
+    }*/
 
     .div-grid{
         margin-top: 10px;
@@ -72,5 +72,34 @@ page-home {
         height: 13%;
     }
 
+    .temp-logo-container{
+        margin-top: 2px;
+    }
+
+    .logo1{
+       color : white;
+       left: 0;
+       right: 0;
+       position: absolute;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 20px;
+       font-size: 70px;
+       text-align: center;
+       text-shadow: 4px 3px #263238;
+    }
+
+    .logo2{
+        color : white;
+        left: 0;
+        right: 0;
+        position: absolute;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        margin-top: 60px;
+        font-size: 30px;
+        text-align: center;
+        text-shadow: 2px 2px #263238;
+     }
 
 }
