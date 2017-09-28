@@ -62,7 +62,13 @@ page-assemblies {
 
     .listTitle
     {
-        color : white !important;
+        background-color : transparent;
+        box-shadow: none;
+    }
+
+    .year-title{
+        color: #ffffff;
+        font-size: 25px;
     }
 
     .icon-header-assemblies{
